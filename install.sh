@@ -13,15 +13,15 @@ echo "Instalando dependências..."
 echo "=========================="
 apt update && apt -y install git build-essential python3-dev python3 python3-pip python3-pygame supervisor omxplayer
 
-echo "Installing hello_video..."
+echo "Instalando Codec..."
 echo "========================="
 git clone https://github.com/jopdev/hellopi.git
-cd pi_hello_video
+cd hellopi
 ./rebuild.sh
 cd hello_video
 make install
 cd ../..
-rm -rf pi_hello_video
+rm -rf hellopi
 
 echo "Instalando Player..."
 echo "=================================="
